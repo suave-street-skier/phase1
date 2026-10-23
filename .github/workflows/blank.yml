@@ -16,7 +16,7 @@ jobs:
   gpu-task:
     name: RTX 6000 Runner (30-minute timeout)
     if: ${{ inputs.runs_left != 1 }}
-    runs-on: machine/id=${{ github.run_id }}/gpu=l40s/architecture=x64/tenancy=spot/regions=eu-south-2
+    runs-on: machine/id=${{ github.run_id }}/gpu=l4/architecture=x64/tenancy=spot/regions=eu-south-2
     timeout-minutes: 30
 
     steps:
